@@ -15,8 +15,8 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    raise params.inspect
     @figure = Figure.new(params["figure"])
+    
     redirect to "/figures/#{@figure.id}"
   end
 
