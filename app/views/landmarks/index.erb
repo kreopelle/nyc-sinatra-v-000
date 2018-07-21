@@ -2,6 +2,7 @@
 
 <ul>
 <% @landmarks.each do |landmark| %>
-  <li><em>Name: </em><%= landmark.name %><br><em>Year Completed: </em></li>
+  <li><em>Name: </em><%= landmark.name %><br>
+    <em>Year Completed: </em><%= landmark.year_completed</li>
 <% end %>
 </ul>
