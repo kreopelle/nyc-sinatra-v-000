@@ -32,7 +32,7 @@ class FiguresController < ApplicationController
   end
 
   post '/figures/:id' do
-    @figure = 
+    @figure = Figure.find(params[:id])
   end
 
 
