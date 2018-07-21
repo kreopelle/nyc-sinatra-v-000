@@ -15,7 +15,7 @@ class FiguresController < ApplicationController
   end
 
   get '/figures/:id/edit' do
-    
+    @figure = Figure.find(params[:id])
   end
 
   post '/figures' do
