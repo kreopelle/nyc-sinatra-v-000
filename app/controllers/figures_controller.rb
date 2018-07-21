@@ -30,7 +30,6 @@ class FiguresController < ApplicationController
       @figure.save
       title.save
     end
-
     redirect to "/figures/#{@figure.id}"
   end
 
