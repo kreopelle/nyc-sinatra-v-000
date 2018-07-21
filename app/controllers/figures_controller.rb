@@ -16,7 +16,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.new(params["figure"])
-    
+    if !params["landmark"]["name"].empty?
     redirect to "/figures/#{@figure.id}"
   end
 
