@@ -17,7 +17,7 @@ class FiguresController < ApplicationController
   post '/figures' do
     @figure = Figure.new(params["figure"])
     if !params["landmark"]["name"].empty? && !params["landmark"]["year_completed"].empty?
-      
+      landmark = Landmark.create()
     end
     redirect to "/figures/#{@figure.id}"
   end
