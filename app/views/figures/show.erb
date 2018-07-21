@@ -18,6 +18,6 @@
 
 <ul>
   <% @figure.landmarks.each do |landmark| %>
-    <li><%= landmark.name %> <%= landmark.year_completed %></li><br>
+    <li>Name: <%= landmark.name %> Year Completed:<%= landmark.year_completed %></li><br>
   <%end%>
 </ul>
