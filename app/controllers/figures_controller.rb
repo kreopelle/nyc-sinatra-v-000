@@ -14,6 +14,10 @@ class FiguresController < ApplicationController
     erb :'/figures/show'
   end
 
+  get '/figures/:id/edit' do
+    
+  end
+
   post '/figures' do
     @figure = Figure.new(params["figure"])
     if !params["landmark"]["name"].empty?
@@ -26,6 +30,5 @@ class FiguresController < ApplicationController
     redirect to "/figures/#{@figure.id}"
   end
 
-# {"figure"=>{"name"=>"Margaret Mead", "title_ids"=>["on"], "landmark_ids"=>["on"]}, "title"=>{"name"=>"Anthropologist"}, "landmark"=>{"name"=>"Coming of Age in Samoa", "year_completed"=>"1950"}}
 
 end
