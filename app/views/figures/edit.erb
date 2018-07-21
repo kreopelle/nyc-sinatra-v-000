@@ -7,7 +7,7 @@
   <label for="titles"><b>Titles</b></label>
   <br></br>
   <% Title.all.each do |title| %>
-    <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id="title_<%=title.id%>" <%=><%=title.name%></input>
+    <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id="title_<%=title.id%>" <%="checked" if @figure.titles.include?(title)%>><%=title.name%></input>
     <br>
   <% end %>
   <br></br>
