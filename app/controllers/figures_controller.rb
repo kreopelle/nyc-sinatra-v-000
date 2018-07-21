@@ -32,6 +32,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
+    
   end
 
 
