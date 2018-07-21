@@ -32,7 +32,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
-    
+    raise params.inspect
   end
 
 
