@@ -14,6 +14,8 @@ class FiguresController < ApplicationController
     erb :'/figures/show'
   end
 
-  get '/'
+  post '/figures' do
+
+  end 
 
 end
