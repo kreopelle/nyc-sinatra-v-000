@@ -31,7 +31,7 @@ class FiguresController < ApplicationController
     redirect to "/figures/#{@figure.id}"
   end
 
-  patch '/figures/:id' do
+  post '/figures/:id' do
     raise params.inspect
   end
 
