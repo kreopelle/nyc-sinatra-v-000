@@ -32,7 +32,7 @@ class FiguresController < ApplicationController
   end
 
   post '/figures/:id' do
-    raise params.inspect
+    @figure = 
   end
 
 
