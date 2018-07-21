@@ -16,6 +16,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
 
-  end 
+    redirect to ""
+  end
 
 end
