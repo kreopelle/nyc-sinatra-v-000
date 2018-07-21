@@ -5,17 +5,17 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks' do
-    @figures = Landmark.all
+    @landmarks = Landmark.all
     erb :'landmarks/index'
   end
 
   get '/landmarks/:id' do
-    @figure = Landmark.find(params[:id])
+    @landmark = Landmark.find(params[:id])
     erb :'/landmarks/show'
   end
 
   get '/landmarks/:id/edit' do
-    @figure = Landmark.find(params[:id])
+    @landmark = Landmark.find(params[:id])
     erb :'/landmarks/edit'
   end
 
