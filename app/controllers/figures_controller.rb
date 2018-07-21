@@ -24,11 +24,8 @@ class FiguresController < ApplicationController
       landmark.save
     end
     if !params["title"]["name"].empty?
-      title = Title.create(params["title"])
-      @figure.titles << title
-      title.figure = @figure
-      @figure.save
-      title.save
+      @figure.titles << Title.create(params["title"])
+
     end
     redirect to "/figures/#{@figure.id}"
   end
