@@ -29,7 +29,7 @@ class LandmarksController < ApplicationController
       @figure.titles << Title.create(params["title"])
     end
     @figure.save
-    redirect to "/figures/#{@figure.id}"
+    redirect to "/landmarks/#{@landmark.id}"
   end
 
   post '/figures/:id' do
