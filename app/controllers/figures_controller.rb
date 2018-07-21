@@ -33,7 +33,7 @@ class FiguresController < ApplicationController
 
   post '/figures/:id' do
     @figure = Figure.find(params[:id])
-    
+    @figure.name = params["figure"]["name"]
   end
 
 
