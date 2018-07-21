@@ -33,6 +33,7 @@ class FiguresController < ApplicationController
 
   post '/figures/:id' do
     @figure = Figure.find(params[:id])
+    
   end
 
 
