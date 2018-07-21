@@ -4,6 +4,7 @@
   <input type="text" name="landmark[name]" id="name">
   <br></br>
   <label for="year_completed"><b>Titles</b></label>
+  <input type="text" name="landmark[name]" id="name">
   <br></br>
   <% Title.all.each do |title| %>
     <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id="title_<%=title.id%>"><%=title.name%></input>
