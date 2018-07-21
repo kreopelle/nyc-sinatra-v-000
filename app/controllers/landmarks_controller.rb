@@ -26,7 +26,7 @@ class LandmarksController < ApplicationController
 
   post '/landmarks/:id' do
     @landmark = Landmark.find(params[:id])
-    @landmark.name = 
+    @landmark.name = params["landmark"]["name"]
     redirect to "/landmarks/#{@landmark.id}"
   end
 
